@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Banking Dashboard</title>
+    <link rel="stylesheet" href="/public/Dashboard.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">Horizon</span>
+            </div>
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <nav>
+                <a href="#" class="nav-item active"><i class="fas fa-home"></i> Home</a>
+                <a href="#" class="nav-item"><i class="fas fa-university"></i> My Banks</a>
+                <a href="#" class="nav-item"><i class="fas fa-history"></i> Transaction History</a>
+                <a href="#" class="nav-item"><i class="fas fa-exchange-alt"></i> Payment Transfer</a>
+                <a href="#" class="nav-item"><i class="fas fa-link"></i> Connect Bank</a>
+            </nav>
+        </aside>
+        <main>
+            <header>
+                <h1>Welcome, <span class="highlight">Adrian</span></h1>
+                <p>Access & manage your account and transactions efficiently.</p>
+            </header>
+            <section class="account-summary">
+                <div class="balance-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="circle" stroke-dasharray="75, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    </svg>
+                    <div class="balance-info">
+                        <span>2 Bank Accounts</span>
+                        <h2>Total Current Balance</h2>
+                        <h3>$2,698.12</h3>
+                    </div>
+                </div>
+                <button class="add-bank">+ Add bank</button>
+            </section>
+            <section class="recent-transactions">
+                <div class="section-header">
+                    <h2>Recent transactions</h2>
+                    <a href="#" class="view-all">View all</a>
+                </div>
+                <div class="bank-tabs">
+                    <button class="bank-tab active">Chase Bank</button>
+                    <button class="bank-tab">Bank of America</button>
+                    <button class="bank-tab">First Platypus Bank</button>
+                </div>
+                <div class="bank-info">
+                    <div class="bank-logo">CB</div>
+                    <div class="bank-details">
+                        <h3>Chase Bank</h3>
+                        <span class="bank-balance">$2,588.12</span>
+                    </div>
+                    <span class="account-type">savings</span>
+                </div>
+                <table class="transactions-table">
+                    <thead>
+                        <tr>
+                            <th>Transaction</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="spotify-logo.png" alt="Spotify" class="transaction-logo"> Spotify</td>
+                            <td class="amount negative">- $15.00</td>
+                            <td class="status processing">Processing</td>
+                            <td>Wed 1:00pm</td>
+                            <td><span class="category subscriptions">Subscriptions</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="alexa-doe.png" alt="Alexa Doe" class="transaction-logo"> Alexa Doe</td>
+                            <td class="amount positive">+ $88.00</td>
+                            <td class="status success">Success</td>
+                            <td>Wed 2:45am</td>
+                            <td><span class="category deposit">Deposit</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="figma-logo.png" alt="Figma" class="transaction-logo"> Figma</td>
+                            <td class="amount negative">- $18.99</td>
+                            <td class="status processing">Processing</td>
+                            <td>Tue 6:10pm</td>
+                            <td><span class="category income">Income</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="transaction-logo text-logo">FV</span> Fresh F&V</td>
+                            <td class="amount negative">- $88.00</td>
+                            <td class="status success">Success</td>
+                            <td>Tue 12:15pm</td>
+                            <td><span class="category groceries">Groceries</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="sam-sulek.png" alt="Sam Sulek" class="transaction-logo"> Sam Sulek</td>
+                            <td class="amount negative">- $40.20</td>
+                            <td class="status declined">Declined</td>
+                            <td>Tue 5:40am</td>
+                            <td><span class="category food">Food</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <aside class="right-sidebar">
+            <div class="user-info">
+                <img src="js-mastery-logo.png" alt="JS Mastery" class="company-logo">
+                <h3>Adrian Hajdin</h3>
+                <p>adrian@jsmastery.pro</p>
+            </div>
+            <section class="my-banks">
+                <div class="section-header">
+                    <h3>My Banks</h3>
+                    <button class="add-bank small">+ Add bank</button>
+                </div>
+                <div class="bank-cards">
+                    <div class="bank-card">
+                        <div class="card-content">
+                            <h4>JS Mastery Pro.</h4>
+                            <div class="card-number">1234 1234 1234 1234</div>
+                            <div class="card-info">
+                                <span>ADRIAN HAJDIN</span>
+                                <span>06/24</span>
+                            </div>
+                        </div>
+                        <div class="card-type">VISA</div>
+                    </div>
+                </div>
+            </section>
+            <section class="my-budgets">
+                <div class="section-header">
+                    <h3>My budgets</h3>
+                    <button class="more-options"><i class="fas fa-ellipsis-v"></i></button>
+                </div>
+                <div class="budget-items">
+                    <div class="budget-item">
+                        <i class="fas fa-tv"></i>
+                        <div class="budget-info">
+                            <h4>Subscriptions</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <span class="budget-amount">$25 left</span>
+                    </div>
+                    <div class="budget-item">
+                        <i class="fas fa-utensils"></i>
+                        <div class="budget-info">
+                            <h4>Food and booze</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <span class="budget-amount">$120 left</span>
+                    </div>
+                    <div class="budget-item">
+                        <i class="fas fa-piggy-bank"></i>
+                        <div class="budget-info">
+                            <h4>Savings</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <span class="budget-amount">$50 left</span>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </div>
+    <footer>
+        <div class="user-info">
+            <img src="adrian-hajdin.png" alt="Adrian Hajdin" class="user-avatar">
+            <div>
+                <span class="user-name">Adrian Hajdin</span>
+                <span class="user-email">adrian@jsmastery.pro</span>
+            </div>
+        </div>
+        <button class="logout-button"><i class="fas fa-sign-out-alt"></i></button>
+    </footer>
+</body>
+</html>

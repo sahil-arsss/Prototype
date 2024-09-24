@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Signin</title>
+</head>
+<body>
+
+    <% if (locals.error) { %>
+        <div class="alert">
+            <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <%= locals.error %>
+        </div>      
+    <% } %>
+    <div class="wrapper">
+      
+        <form action="/user/signin" method="post">
+           <h1>Signin</h1>
+           <div class="input-box">
+            <input type="text" placeholder="Email address " required name="email"  >
+            
+           </div>
+           
+           <div class="input-box">
+            <input type="password" placeholder="Password" required name="password">
+           </div>
+           <button type="submit"  class="btn">Signup</button>
+          
+        </form>
+        
+    </div>
+
+
+
+</body>
+</html>
